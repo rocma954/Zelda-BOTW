@@ -1,0 +1,236 @@
+@media screen {
+    .cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .lora {
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+}
+
+
+h1, h2, h4, li, button {
+    font-family: cinzel;
+    color: #D4AF37;
+}
+
+p {
+    font-family: lora;
+    color: #F5F5F5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+
+    /* Ajouter l'image en background */
+    background-image: url(./image/Design\ sans\ titre\ \(1\).png); /* Mets le chemin de ton image ici */
+    background-size: cover; /* L'image prend tout l'écran */
+    background-repeat: no-repeat; /* Pas de répétition */
+    background-position: center; /* Centrer l'image */
+    background-attachment: fixed; /* L'image reste fixe lors du scroll */
+}
+
+
+.content {
+    text-align: center;
+    color: white; /* Couleur du texte pour le contraste */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajout d'un fond semi-transparent */
+    margin: 50px;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    position: sticky; 
+    top: 0;
+    z-index: 10; 
+}
+
+
+.logo img {
+    margin-left: 30px;
+    max-width: 60px; 
+    max-height: 100px;
+}
+
+/* Navbar */
+.navbar ul {
+    list-style-type: none; 
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover, button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px; 
+    color: #00ffcc;
+}
+
+button {
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.citation {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .citation img{
+    border-radius: 10px;
+    width: 500px;
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+
+.citation img:hover {
+    transform: scale(1.1);
+}
+
+.texte {
+    transition: transform 0.3s ease;
+}
+.texte:hover {
+    transform: scale(1.4);
+}
+
+.intro{
+    margin: 100px;
+}
+
+#perso {
+    margin-top: 50px;
+}
+
+.personnage {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.personnage img{
+    border-radius: 10px;
+    margin-right: 50px;
+    max-height: 350px;
+    width: 450px;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+.personnage img:hover {
+    transform: scale(1.1);
+}
+
+.personnage div {
+    padding: 50px;
+    transition: transform 0.3s ease;
+}
+
+.personnage div:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 250px;
+    margin: auto;
+    padding: 8px;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 3px 4px 6px 2px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#message input {
+    height: 70px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 4px 6px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    margin-top: 8px;
+    width: 100%;
+    background-color:black;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 0;
+    border: solid 2px black;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:#D4AF37;
+    color: black;
+} 
+
+label {
+    margin: 8px 0px;
+}
+
+.check {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+

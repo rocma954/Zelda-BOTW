@@ -1,0 +1,300 @@
+@media screen {
+    .cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .lora {
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+} 
+
+
+h1, h2, h3, h4, li, button {
+    font-family: cinzel;
+    color: #D4AF37;
+}
+
+p {
+    font-family: lora;
+    color: #F5F5F5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+
+    /* Ajouter l'image en background */
+    background-image: url(./image/Design\ sans\ titre\ \(1\).png); /* Mets le chemin de ton image ici */
+    background-size: cover; /* L'image prend tout l'écran */
+    background-repeat: no-repeat; /* Pas de répétition */
+    background-position: center; /* Centrer l'image */
+    background-attachment: fixed; /* L'image reste fixe lors du scroll */
+}
+
+
+.content {
+    text-align: center;
+    color: white; /* Couleur du texte pour le contraste */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajout d'un fond semi-transparent */
+    margin: 50px;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    position: sticky; 
+    top: 0;
+    z-index: 10; 
+}
+
+.logo{
+    display: flex;
+}
+
+#photo {
+    margin-left: 30px;
+    max-width: 80px; 
+    max-height: 100px;
+}
+
+/* Navbar */
+.navbar ul {
+    list-style-type: none; 
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover, button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px; 
+    color: #00ffcc;
+}
+
+.boutton-musique {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#play img {
+    width: 60px;
+}
+
+#pose img {
+    width: 45px;
+    margin-left: 20px;
+}
+
+button {
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.citation {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .citation img{
+    border-radius: 10px;
+    width: 500px;
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+
+.citation img:hover {
+    transform: scale(1.1);
+}
+
+.texte {
+    transition: transform 0.3s ease;
+}
+.texte:hover {
+    transform: scale(1.4);
+}
+
+.intro{
+    margin: 100px;
+}
+
+#perso {
+    margin-top: 50px;
+}
+
+.personnage {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.personnage img {
+    border-radius: 10px;
+    margin-right: 50px;
+    max-height: 350px;
+    width: 450px;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+.personnage img:hover, .mechant:hover, .mechant2:hover {
+    transform: scale(1.1);
+}
+
+.personnage div {
+    padding: 50px;
+    transition: transform 0.3s ease;
+}
+
+.personnage div:hover {
+    transform: scale(1.1);
+}
+
+#monstres {
+    margin-top: 150px;
+}
+
+.opps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.mechant, .mechant img {
+    width: 230px;
+    transition: transform 0.3s ease;
+}
+
+.mechant2, .mechant2 img {
+    width: 300px;
+    transition: transform 0.3s ease;
+    display: grid;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+  margin-bottom: 60px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("./image/Ch27Hyrule_BOTW.webp")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("./image/cocorico_1579917241.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("./image/Domaine_Zora_BOTW.webp")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("./image/Gerudo_Town_1.webp")
+        no-repeat 50% / cover;
+    }
+
+    .lieux {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 900px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .lieux {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
